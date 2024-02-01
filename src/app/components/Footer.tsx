@@ -5,8 +5,8 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 import { faEnvelope, faPhone } from "@fortawesome/free-solid-svg-icons";
 import { ReactNode } from "react";
-import { ExternalLink, InnerLink } from "./Links";
-import { lilitaOne } from "../styles/fonts/fonts";
+import { ExternalLink, InnerLink, DownloadLink } from "./Links";
+import { lilitaOne } from "@/fonts/fonts";
 
 const Category = ({
   label,
@@ -65,7 +65,7 @@ function Footer() {
           <InnerLink url="/talents" label="Talent Referral" />
         </Category>
         <Category label="Career">
-          {/* <DownloadLink label="Download CV" filename="Hire me !" url={CV} /> */}
+          <DownloadLink label="Download CV" filename="Hire me !" url='/documents/CV.pdf' />
           <InnerLink url="/testimonials" label="Testimonials" />
           <InnerLink url="/certificates" label="Certificates" />
           <InnerLink url="/tech-stack" label="Full Technical Stack" />

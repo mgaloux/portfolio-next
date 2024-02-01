@@ -5,7 +5,7 @@ import "../index.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub, faTwitter } from "@fortawesome/free-brands-svg-icons";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
-import { lilitaOne, poppins } from "../styles/fonts/fonts";
+import { lilitaOne, poppins } from "@/fonts/fonts";
 
 export default function Headpage() {
   return (
@@ -35,27 +35,24 @@ export default function Headpage() {
           className="flex flex-wrap gap-4 mt-4"
         >
           <span
-            style={poppins.style}
-            className="arrow-animation poppins text-white border-green-400 border p-2 backdrop-blur-[10px] text-xs rounded-lg"
+            className="text-white border-green-400 border p-2 backdrop-blur-[10px] text-xs rounded-lg"
           >
             🟢 Currently open to work
           </span>
           <a
-            style={poppins.style}
             target="_blank"
             rel="noopener noreferrer"
             href="https://github.com/Zequar"
-            className="arrow-animation poppins text-white border-gray-400 border p-2 backdrop-blur-[10px] text-xs rounded-lg"
+            className="arrow-animation text-white border-gray-400 border p-2 backdrop-blur-[10px] text-xs rounded-lg"
           >
             <FontAwesomeIcon icon={faGithub} size="lg" className="pr-1" />{" "}
             Zequar
           </a>
           <a
-            style={poppins.style}
             target="_blank"
             rel="noopener noreferrer"
             href="https://twitter.com/ZequarDev"
-            className="arrow-animation  poppins text-white border-blue-400 border p-2 backdrop-blur-[10px] text-xs rounded-lg"
+            className="arrow-animation text-white border-blue-400 border p-2 backdrop-blur-[10px] text-xs rounded-lg"
           >
             <FontAwesomeIcon
               icon={faTwitter}
@@ -66,11 +63,10 @@ export default function Headpage() {
             ZequarDev
           </a>
           <a
-            style={poppins.style}
             href="mailto:martin.galoux@epitech.eu"
             target="_blank"
             rel="noopener noreferrer"
-            className="arrow-animation poppins text-white border-red-400 border p-2 backdrop-blur-[10px] text-xs rounded-lg"
+            className="text-white border-red-400 border p-2 backdrop-blur-[10px] text-xs rounded-lg"
           >
             <FontAwesomeIcon
               icon={faEnvelope}

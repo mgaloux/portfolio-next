@@ -2,6 +2,7 @@ import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import Headpage from "./components/Headpage";
 import SelectedProjects from "./components/SelectedProjects";
+import TechnoBadges from "./components/TechnoBadges";
 
 export default function Home() {
   return (
@@ -10,10 +11,8 @@ export default function Home() {
       <div className="w-[100vw] px-[15%]">
         <Headpage />
         <SelectedProjects />
-
-        {/*
-      <TechnoBadges />
-      <Introduction /> */}
+        <TechnoBadges />
+              {/*<Introduction /> */}
       </div>
       <Footer />
     </div>

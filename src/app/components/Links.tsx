@@ -44,6 +44,7 @@ export const DownloadLink = ({
 }) => {
   return (
     <a
+    style={poppins.style}
       href={url}
       download={filename}
       target="_blank"
