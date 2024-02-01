@@ -5,17 +5,17 @@ import SelectedProjects from "./components/SelectedProjects";
 
 export default function Home() {
   return (
-    <div id='home'>
-    <Navbar />
-    <div className="w-[100vw] px-[15%]">
-      <Headpage />
-      <SelectedProjects />
-      
-      { /*
+    <div id="home">
+      <Navbar />
+      <div className="w-[100vw] px-[15%]">
+        <Headpage />
+        <SelectedProjects />
+
+        {/*
       <TechnoBadges />
       <Introduction /> */}
+      </div>
+      <Footer />
     </div>
-    <Footer />
-  </div>
   );
 }

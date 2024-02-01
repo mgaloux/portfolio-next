@@ -2,31 +2,35 @@ import {
   faGithub,
   faLinkedin,
   faTwitter,
-} from '@fortawesome/free-brands-svg-icons'
-import { faEnvelope, faPhone } from '@fortawesome/free-solid-svg-icons'
-import { ReactNode } from 'react'
-import { ExternalLink, InnerLink } from './Links'
-import { lilitaOne } from '../styles/fonts/fonts'
+} from "@fortawesome/free-brands-svg-icons";
+import { faEnvelope, faPhone } from "@fortawesome/free-solid-svg-icons";
+import { ReactNode } from "react";
+import { ExternalLink, InnerLink } from "./Links";
+import { lilitaOne } from "../styles/fonts/fonts";
 
 const Category = ({
   label,
   children,
 }: {
-  label: string
-  children: ReactNode
+  label: string;
+  children: ReactNode;
 }) => {
   return (
     <div className="mb-8 flex flex-col">
-      <h3 style={lilitaOne.style} className="text-2xl pb-2">{label}</h3>
+      <h3 style={lilitaOne.style} className="text-2xl pb-2">
+        {label}
+      </h3>
       {children}
     </div>
-  )
-}
+  );
+};
 
 function Footer() {
   return (
-    <footer 
-    className="mt-16 mb-0 flex flex-col bg-black px-[15%] py-8 end-0" id='contact'>
+    <footer
+      className="mt-16 mb-0 flex flex-col bg-black px-[15%] py-8 end-0"
+      id="contact"
+    >
       <div className="flex flex-wrap justify-start gap-32">
         <Category label="Contact">
           <ExternalLink
@@ -75,7 +79,7 @@ function Footer() {
         </i>
       </p>
     </footer>
-  )
+  );
 }
 
-export default Footer
+export default Footer;

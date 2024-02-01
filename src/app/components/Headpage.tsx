@@ -1,11 +1,11 @@
-'use client'
+"use client";
 
-import { motion as m } from 'framer-motion'
-import '../index.css'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faGithub, faTwitter } from '@fortawesome/free-brands-svg-icons'
-import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
-import { lilitaOne, poppins } from '../styles/fonts/fonts'
+import { motion as m } from "framer-motion";
+import "../index.css";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faGithub, faTwitter } from "@fortawesome/free-brands-svg-icons";
+import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
+import { lilitaOne, poppins } from "../styles/fonts/fonts";
 
 export default function Headpage() {
   return (
@@ -13,8 +13,8 @@ export default function Headpage() {
       <section className="pt-32">
         <m.h1
           style={lilitaOne.style}
-          initial={{ y: '-100%', opacity: 0 }}
-          animate={{ y: '0%', opacity: 1 }}
+          initial={{ y: "-100%", opacity: 0 }}
+          animate={{ y: "0%", opacity: 1 }}
           transition={{ duration: 0.5 }}
         >
           Nice to meet you !
@@ -22,20 +22,22 @@ export default function Headpage() {
         <m.p
           style={poppins.style}
           className="text-2xl font-medium"
-          initial={{ y: '-100%', opacity: 0 }}
-          animate={{ y: '0%', opacity: 1 }}
+          initial={{ y: "-100%", opacity: 0 }}
+          animate={{ y: "0%", opacity: 1 }}
           transition={{ duration: 0.5, delay: 0.2 }}
         >
           I'm <b>Martin</b>, Full Stack Web3 Developer
         </m.p>
         <m.div
-          
-          initial={{ y: '-100%', opacity: 0 }}
-          animate={{ y: '0%', opacity: 1 }}
+          initial={{ y: "-100%", opacity: 0 }}
+          animate={{ y: "0%", opacity: 1 }}
           transition={{ duration: 0.5, delay: 0.3 }}
           className="flex flex-wrap gap-4 mt-4"
         >
-          <span style={poppins.style} className="arrow-animation poppins text-white border-green-400 border p-2 backdrop-blur-[10px] text-xs rounded-lg">
+          <span
+            style={poppins.style}
+            className="arrow-animation poppins text-white border-green-400 border p-2 backdrop-blur-[10px] text-xs rounded-lg"
+          >
             🟢 Currently open to work
           </span>
           <a
@@ -45,7 +47,7 @@ export default function Headpage() {
             href="https://github.com/Zequar"
             className="arrow-animation poppins text-white border-gray-400 border p-2 backdrop-blur-[10px] text-xs rounded-lg"
           >
-            <FontAwesomeIcon icon={faGithub} size="lg" className="pr-1" />{' '}
+            <FontAwesomeIcon icon={faGithub} size="lg" className="pr-1" />{" "}
             Zequar
           </a>
           <a
@@ -60,7 +62,7 @@ export default function Headpage() {
               size="lg"
               color="lightblue"
               className="pr-1"
-            />{' '}
+            />{" "}
             ZequarDev
           </a>
           <a
@@ -74,11 +76,11 @@ export default function Headpage() {
               icon={faEnvelope}
               size="lg"
               className="pr-1 text-red-400"
-            />{' '}
+            />{" "}
             hello@mgaloux.dev
           </a>
         </m.div>
       </section>
     </div>
-  )
+  );
 }

@@ -15,7 +15,7 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
-  font-family: 'Lilita One', sans-serif;
+  font-family: "Lilita One", sans-serif;
   overflow-x: hidden;
 }
 
@@ -87,7 +87,7 @@ button {
   cursor: pointer;
   color: white;
   transition: border-color 0.25s;
-  font-family: 'Poppins';
+  font-family: "Poppins";
 }
 button:hover {
   border-color: #646cff;
@@ -98,7 +98,7 @@ button:focus-visible {
 }
 
 p {
-  font-family: 'Poppins', Geneva, Verdana, sans-serif;
+  font-family: "Poppins", Geneva, Verdana, sans-serif;
 }
 
 b {
@@ -204,7 +204,7 @@ hr {
 }
 
 .arrow-animation::after {
-  content: '>';
+  content: ">";
   color: inherit;
   transition: 400ms;
   opacity: 0;
@@ -238,5 +238,5 @@ h1 {
 }
 
 .poppins {
-  font-family: 'Poppins';
+  font-family: "Poppins";
 }

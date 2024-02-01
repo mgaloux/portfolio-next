@@ -1,16 +1,16 @@
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import Link from 'next/link'
-import { IconProp } from '@fortawesome/fontawesome-svg-core'
-import { poppins } from '../styles/fonts/fonts'
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import Link from "next/link";
+import { IconProp } from "@fortawesome/fontawesome-svg-core";
+import { poppins } from "../styles/fonts/fonts";
 
 export const ExternalLink = ({
   label,
   url,
   icon,
 }: {
-  label: string
-  url: string
-  icon?: IconProp
+  label: string;
+  url: string;
+  icon?: IconProp;
 }) => {
   return (
     <a
@@ -22,25 +22,25 @@ export const ExternalLink = ({
       {icon && <FontAwesomeIcon icon={icon} size="lg" className="pr-2" />}
       {label}
     </a>
-  )
-}
+  );
+};
 
 export const InnerLink = ({ label, url }: { label: string; url: string }) => {
   return (
     <Link href={url} className="text-sm hover:underline">
       {label}
     </Link>
-  )
-}
+  );
+};
 
 export const DownloadLink = ({
   label,
   filename,
   url,
 }: {
-  label: string
-  filename: string
-  url: string
+  label: string;
+  filename: string;
+  url: string;
 }) => {
   return (
     <a
@@ -52,5 +52,5 @@ export const DownloadLink = ({
     >
       {label}
     </a>
-  )
-}
+  );
+};

@@ -7,21 +7,21 @@ export const container = {
       staggerChildren: 0.2, // Apply staggered animation to children
     },
   },
-}
+};
 
 export const item = {
   hidden: {
-    y: '-100%',
+    y: "-100%",
     opacity: 1,
     zIndex: -5,
   },
   show: {
-    y: '0%',
+    y: "0%",
     opacity: 1,
     zIndex: 1,
     transition: {
-      ease: 'easeInOut',
+      ease: "easeInOut",
       duration: 0.1,
     },
   },
-}
+};
