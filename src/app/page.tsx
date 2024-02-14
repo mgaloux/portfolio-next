@@ -3,6 +3,7 @@ import Footer from "./components/Footer";
 import Headpage from "./components/Headpage";
 import SelectedProjects from "./components/SelectedProjects";
 import TechnoBadges from "./components/TechnoBadges";
+import Introduction from "./components/Introduction";
 
 export default function Home() {
   return (
@@ -12,7 +13,7 @@ export default function Home() {
         <Headpage />
         <SelectedProjects />
         <TechnoBadges />
-              {/*<Introduction /> */}
+        <Introduction />
       </div>
       <Footer />
     </div>
