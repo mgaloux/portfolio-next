@@ -1,58 +1,105 @@
-import Navbar from '../components/Navbar'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons'
+"use client";
+
+import Navbar from "../components/Navbar";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faLinkedin,
+  faGithub,
+  faTwitter,
+} from "@fortawesome/free-brands-svg-icons";
+import { motion as m } from "framer-motion";
 import "../index.css";
-import Footer from '../components/Footer'
+import Footer from "../components/Footer";
+import { lilitaOne, poppins } from "@/fonts/fonts";
+import { faEnvelope, faPhone } from "@fortawesome/free-solid-svg-icons";
 
 function Contact() {
-  const calendlyLink = 'https://calendly.com/mgaloux'
-  const linkedinLink = 'https://www.linkedin.com/in/martingaloux/'
-  const githubLink = 'https://www.github.com/Zequar/'
-
   return (
     <div>
       <Navbar />
-      <div className="centeredSection">
-        <h1>Contact Me</h1>
-        <section className="text-center">
-          <p className="px-10  w-90vw">
-            Like what you saw ? Let's get in contact !
-          </p>
+      <main className="w-[100vw] px-[15%] my-32">
+        <h1 style={lilitaOne.style}>Let's connect !</h1>
+        <p style={poppins.style} className="text-gray-500 my-2">
+          Whether you need me to build your project, want to access my network
+          of talented developers, or just chat about tech, I'm all ears to new
+          connections !
+        </p>
+        <h2 className="my-8 special-underline" style={lilitaOne.style}>
+          Socials Links
+        </h2>
+        <m.div
+          initial={{ y: "-100%", opacity: 0 }}
+          animate={{ y: "0%", opacity: 1 }}
+          transition={{ duration: 0.5, delay: 0.3 }}
+          className="flex flex-wrap gap-4 mt-4"
+        >
+          <a
+            href="https://linkedin.com/in/martingaloux"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-white arrow-animation border-blue-500 border p-2 backdrop-blur-[10px] text-xs rounded-lg"
+          >
+            <FontAwesomeIcon
+              icon={faLinkedin}
+              size="lg"
+              className="pr-1 text-blue-500"
+            />{" "}
+            LinkedIn
+          </a>
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://github.com/Zequar"
+            className="arrow-animation text-white border-gray-400 border p-2 backdrop-blur-[10px] text-xs rounded-lg"
+          >
+            <FontAwesomeIcon icon={faGithub} size="lg" className="pr-1" />{" "}
+            Github
+          </a>
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://twitter.com/ZequarDev"
+            className="arrow-animation text-white border-blue-400 border p-2 backdrop-blur-[10px] text-xs rounded-lg"
+          >
+            <FontAwesomeIcon
+              icon={faTwitter}
+              size="lg"
+              color="lightblue"
+              className="pr-1"
+            />{" "}
+            Twitter • X
+          </a>
           <a
             href="mailto:martin.galoux@epitech.eu"
             target="_blank"
             rel="noopener noreferrer"
+            className="text-white arrow-animation border-red-400 border p-2 backdrop-blur-[10px] text-xs rounded-lg"
           >
-            <button className="border-3 border-white w-80 m-4 p-8 rounded-3xl transition-all duration-1000 hover:scale-105 hover:transform">
-              <h2 className="text-2xl">Shoot an email ✉️</h2>
-            </button>
+            <FontAwesomeIcon
+              icon={faEnvelope}
+              size="lg"
+              className="pr-1 text-red-400"
+            />{" "}
+            hello@mgaloux.dev
           </a>
-          <a href={calendlyLink} target="_blank" rel="noopener noreferrer">
-            <button className="border-3 border-white w-80 m-4 p-8 rounded-3xl transition-all duration-1000 hover:scale-105 hover:transform">
-              <h2 className="text-2xl">Book a call 📞</h2>
-            </button>
+          <a
+            href="https://calendly.com/mgaloux/introducing-meeting"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-white arrow-animation border-orange-400 border p-2 backdrop-blur-[10px] text-xs rounded-lg"
+          >
+            <FontAwesomeIcon
+              icon={faPhone}
+              size="lg"
+              className="pr-1 text-orange-400"
+            />{" "}
+            Book a call
           </a>
-        </section>
-        <section className="mt-0">
-          <p className="px-10 w-90vw my-4 text-center">Let's stay connected !</p>
-          <div className="flex items-start mt-0 gap-8">
-            <a href={linkedinLink} target="_blank" rel="noopener noreferrer">
-              <button className="p-4 w-24 h-24 border-white rounded-full box-shadow transition-all duration-1000 hover:scale-105 hover:transform">
-                <FontAwesomeIcon color="white" icon={faLinkedin} size="2x" />
-              </button>
-            </a>
-            <a href={githubLink} target="_blank" rel="noopener noreferrer">
-              <button className="p-4 w-24 h-24 border-white rounded-full box-shadow transition-all duration-1000 hover:scale-105 hover:transform">
-                <FontAwesomeIcon color="white" icon={faGithub} size="2x" />
-              </button>
-            </a>
-          </div>
-        </section>
-      </div>
-      <Footer/>
+        </m.div>
+      </main>
+      <Footer />
     </div>
-
-  )
+  );
 }
 
-export default Contact
+export default Contact;

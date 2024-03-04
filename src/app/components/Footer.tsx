@@ -65,7 +65,11 @@ function Footer() {
           <InnerLink url="/talents" label="Talent Referral" />
         </Category>
         <Category label="Career">
-          <DownloadLink label="Download CV" filename="Hire me !" url='/documents/CV.pdf' />
+          <DownloadLink
+            label="Download CV"
+            filename="Hire me !"
+            url="/documents/CV.pdf"
+          />
           <InnerLink url="/testimonials" label="Testimonials" />
           <InnerLink url="/certificates" label="Certificates" />
           <InnerLink url="/tech-stack" label="Full Technical Stack" />

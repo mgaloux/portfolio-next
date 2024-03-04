@@ -34,9 +34,7 @@ export default function Headpage() {
           transition={{ duration: 0.5, delay: 0.3 }}
           className="flex flex-wrap gap-4 mt-4"
         >
-          <span
-            className="text-white border-green-400 border p-2 backdrop-blur-[10px] text-xs rounded-lg"
-          >
+          <span className="text-white border-green-400 border p-2 backdrop-blur-[10px] text-xs rounded-lg">
             🟢 Currently open to work
           </span>
           <a

@@ -22,19 +22,6 @@
   border-color: #646cff;
 }
 
-.project-description {
-  padding: 2rem;
-  margin: 2rem;
-  box-shadow: 0 2px 20px rgba(255, 255, 255, 0.5);
-  background-color: rgb(0, 0, 0, 0.9);
-  width: 50vw;
-  min-height: 50vh;
-  font-family: 'Poppins';
-  margin-bottom: 0;
-  text-align: justify;
-  border-radius: 20px 20px 0 0;
-}
-
 .special-underline {
   text-decoration-thickness: 5px;
   text-decoration-color: #646cff;
@@ -50,28 +37,6 @@
   border-radius: 50%;
   z-index: 10;
   object-fit: cover; /* Ensures the image covers the entire container */
-}
-
-.project-tags {
-  margin: 10px 0;
-  text-transform: capitalize;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1rem;
-}
-
-.project-tags span {
-  box-sizing: border-box;
-  padding: 0.5rem;
-  background-color: rgb(5, 5, 5);
-  border: 1px solid white;
-  border-radius: 14px;
-  color: #bbb;
-  font-family: Poppins;
-
-  &:hover {
-    color: white;
-  }
 }
 
 .project-responsibilities {
