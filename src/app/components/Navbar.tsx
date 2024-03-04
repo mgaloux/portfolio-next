@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
-import { lilitaOne } from "../styles/fonts/fonts";
+import { poppins } from "../styles/fonts/fonts";
 
 const LogoBackHomeButton = () => {
   return (
@@ -19,8 +19,8 @@ const LogoBackHomeButton = () => {
 
 const Links = () => {
   return (
-    <div className="" style={lilitaOne.style}>
-      <div className="flex flex-row text-xl gap-8 items-center">
+    <div className="" style={poppins.style}>
+      <div className="flex flex-row text-md gap-8 items-center">
         <div className="hover:underline">
           <Link href="/projects">Projects</Link>
         </div>

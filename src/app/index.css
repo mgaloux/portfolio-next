@@ -122,6 +122,8 @@ body {
 
 h3 {
   color: rgb(194, 198, 255);
+  font-size: 20px;
+  font-weight: 500;
 }
 
 .testimonial-pic {

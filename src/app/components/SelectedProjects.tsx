@@ -72,20 +72,20 @@ function SelectedProjects() {
       >
         <ProjectDisplay
           title="Decentralized Exchange"
-          href="/exchange"
+          href="/projects/exchange"
           projectType="🚀 Personal project"
           image={ExchangePicture}
         />
         <ProjectDisplay
           title="Maskott"
-          href="/maskott"
+          href="/projects/maskott"
           projectType="💼 Professional project"
           image={MaskottPicture}
         />
         <ProjectDisplay
           image={ZackNaniPicture}
           title="Zack Nani Live Extension"
-          href="/live-extension"
+          href="/projects/live-extension"
           projectType="💼 Freelance project"
         />
       </m.ul>

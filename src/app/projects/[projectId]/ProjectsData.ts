@@ -19,7 +19,7 @@ export interface ProjectDataInterface {
   images?: string[];
 }
 
-export const conityProjectData: ProjectDataInterface = {
+const conityProjectData: ProjectDataInterface = {
   testimonials: [
     {
       referent: "Richard Raduly",
@@ -69,7 +69,7 @@ export const conityProjectData: ProjectDataInterface = {
   subtitle: "Internship",
 };
 
-export const maskottProjectData: ProjectDataInterface = {
+const maskottProjectData: ProjectDataInterface = {
   testimonials: [
     {
       referent: "Romain Biard",
@@ -123,7 +123,7 @@ export const maskottProjectData: ProjectDataInterface = {
   subtitle: "Full-Time Contract",
 };
 
-export const deepLogicProjectData: ProjectDataInterface = {
+const deepLogicProjectData: ProjectDataInterface = {
   testimonials: [
     {
       referent: "Stéphane Barbier",
@@ -158,7 +158,7 @@ export const deepLogicProjectData: ProjectDataInterface = {
   subtitle: "Internships",
 };
 
-export const exchangeProjectData: ProjectDataInterface = {
+const exchangeProjectData: ProjectDataInterface = {
   images: [
     "https://cdn.discordapp.com/attachments/909785310039253022/1169945708820967465/DEXScreenshot.png?ex=65573fd9&is=6544cad9&hm=5e1eb8bd3a634544f8c9439786f3ff083f4690e1b1965fcc9abf709d696e8f2f&",
   ],
@@ -238,7 +238,7 @@ export const exchangeProjectData: ProjectDataInterface = {
   subtitle: "Personal Project",
 };
 
-export const liveExtensionProjectData: ProjectDataInterface = {
+const liveExtensionProjectData: ProjectDataInterface = {
   images: [
     "https://media.discordapp.net/attachments/909785310039253022/1169995117453652018/ZackScreenshot.PNG?ex=65576ddd&is=6544f8dd&hm=6d5b9af961607d5422549a6f4fb0d9db1df71dbc046ba65603673c79367dda23&=&width=711&height=670",
   ],
@@ -281,7 +281,7 @@ export const liveExtensionProjectData: ProjectDataInterface = {
   subtitle: "Freelance Project",
 };
 
-export const streamManagerProjectData: ProjectDataInterface = {
+const streamManagerProjectData: ProjectDataInterface = {
   images: [
     "https://cdn.discordapp.com/attachments/909785310039253022/1170005574017101975/NodeCGScreen.PNG?ex=6557779a&is=6545029a&hm=e0525c7503f376d88e4097a502b60d0c555792d77ffebadaca279bf688cf0372&",
   ],
@@ -347,3 +347,12 @@ export const streamManagerProjectData: ProjectDataInterface = {
   title: "Stream Manager",
   subtitle: "Personal Project",
 };
+
+export const projectsData = new Map<string, ProjectDataInterface>([
+  ["conity", conityProjectData],
+  ["deep-logic", deepLogicProjectData],
+  ["stream-manager", streamManagerProjectData],
+  ["exchange", exchangeProjectData],
+  ["maskott", maskottProjectData],
+  ["live-extension", liveExtensionProjectData],
+]);
