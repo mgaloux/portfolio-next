@@ -13,54 +13,10 @@ import Footer from "@/app/components/Footer";
 import { lilitaOne, poppins } from "@/fonts/fonts";
 
 const ProjectTemplate = () => {
-  /*const projectData: ProjectDataInterface = {
-    images: [
-      "https://media.discordapp.net/attachments/909785310039253022/1169995117453652018/ZackScreenshot.PNG?ex=65576ddd&is=6544f8dd&hm=6d5b9af961607d5422549a6f4fb0d9db1df71dbc046ba65603673c79367dda23&=&width=711&height=670",
-    ],
-    tags: [
-      "Chrome Extension",
-      "HTML",
-      "JavaScript",
-      "React.js",
-      "GraphQL",
-      "Twitch",
-      "YouTube",
-      "API",
-    ],
-    testimonials: [
-      {
-        referentPictureUrl:
-          "https://yt3.googleusercontent.com/ytc/APkrFKZ9dIxjSJi5Ee_VgHAYtOw4kWwn0jI6ShxO5o9YCA=s900-c-k-c0x00ffffff-no-rj",
-        referent: "Zack Nani",
-        referentRole: "Streamer & Youtuber",
-        testimonialText: "Wow pas mal",
-      },
-    ],
-    bodyDescription: `I began by clarifying the streamer's expectations to identify the desired features. Subsequently, I proposed an initial prototype following prototyping conducted on Figma, and we iterated until we found the perfect solution for my client.<br/><br/>
-  
-    Once the design and features were defined, I constructed the HTML page and implemented various notification features using the YouTube and Twitch APIs. This enabled viewers to receive updates every minute, indicating the release of a new video or the start of Zack's live stream.<br/><br/>
-    
-    By employing different colors for the icon and notifications, we effectively kept users informed at all times, allowing them to join with a single click from their browser and ensuring they didn't miss any of his valuable content.`,
-    contextDescription: `In order to enhance and stabilize his viewership, renowned streamer Zack Nani required a Google Chrome extension. This extension allowed him to provide his dedicated community with real-time notifications on their screens whenever he initiated a live streaming session.`,
-    responsibilities: [
-      "Clarified client expectations",
-      "Designed and developed a Chrome extension",
-      "Frontend made with (HTML, CSS, JavaScript)",
-      "Backend (YouTube and Twitch API via GraphQL)",
-      "Published the extension on the Chrome Web Store for user access",
-    ],
-    pictureUrl:
-      "https://cdn.discordapp.com/attachments/909785310039253022/1169995492734812160/icon128.png?ex=65f450b6&is=65e1dbb6&hm=ecb64ac43747e6c39ae4299d1e803173b753ec2841b9282fdc0595b60f4cd730&",
-    date: `2023`,
-    title: "Zack Nani Live Extension",
-    subtitle: "Freelance Project",
-  };*/
-
   const params = useParams();
-  console.log(params);
   const projectId: string = Array.isArray(params?.projectId)
     ? params.projectId[0]
-    : params?.projectId || "conity";
+    : params?.projectId;
   const projectData: ProjectDataInterface | undefined =
     projectsData.get(projectId);
 
@@ -133,7 +89,7 @@ const ProjectTemplate = () => {
                     index: number,
                   ) => (
                     <a href={testimonialData.linkedInUrl} target="_blank">
-                      <div className="testimonies-section" key={index}>
+                      <div key={index}>
                         <div className="testimonial-pic">
                           <img
                             src={testimonialData.referentPictureUrl}
@@ -160,13 +116,15 @@ const ProjectTemplate = () => {
             <>
               <section className="image-section">
                 <h3>Images</h3>
-                {projectData.images.map((url: string, index: number) => (
-                  <img
-                    className="project-image"
-                    src={url}
-                    alt={"image" + index}
-                  />
-                ))}
+                <div className="flex flex-wrap gap-4 justify-center">
+                  {projectData.images.map((url: string, index: number) => (
+                    <img
+                      className="max-w-[500px]"
+                      src={url}
+                      alt={"image" + index}
+                    />
+                  ))}
+                </div>
               </section>
             </>
           ) : (

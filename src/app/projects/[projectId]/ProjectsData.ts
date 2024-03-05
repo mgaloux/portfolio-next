@@ -240,7 +240,7 @@ const exchangeProjectData: ProjectDataInterface = {
 
 const liveExtensionProjectData: ProjectDataInterface = {
   images: [
-    "https://media.discordapp.net/attachments/909785310039253022/1169995117453652018/ZackScreenshot.PNG?ex=65576ddd&is=6544f8dd&hm=6d5b9af961607d5422549a6f4fb0d9db1df71dbc046ba65603673c79367dda23&=&width=711&height=670",
+    "https://lh3.googleusercontent.com/ywrDYmxaZmV6N2OY_6PB72WuSYoROUImJNzuoATie1IAed1WO_Hf6T4k0DSlmsqfC9xKCdC2_tM85tJmW-lX1r59Qg=s1280-w1280-h800",
   ],
   tags: [
     "Chrome Extension",
@@ -258,7 +258,7 @@ const liveExtensionProjectData: ProjectDataInterface = {
         "https://yt3.googleusercontent.com/ytc/APkrFKZ9dIxjSJi5Ee_VgHAYtOw4kWwn0jI6ShxO5o9YCA=s900-c-k-c0x00ffffff-no-rj",
       referent: "Zack Nani",
       referentRole: "Streamer & Youtuber",
-      testimonialText: "Wow pas mal",
+      testimonialText: "My fans love it ! Martin delivered an incredibly fast and reliable service. With just a few relevant questions during our initial chat, he set the bar higher than my expectations. I now get my viewers drastically faster when I launch a live show.",
     },
   ],
   bodyDescription: `I began by clarifying the streamer's expectations to identify the desired features. Subsequently, I proposed an initial prototype following prototyping conducted on Figma, and we iterated until we found the perfect solution for my client.<br/><br/>
@@ -275,7 +275,7 @@ const liveExtensionProjectData: ProjectDataInterface = {
     "Published the extension on the Chrome Web Store for user access",
   ],
   pictureUrl:
-    "https://cdn.discordapp.com/attachments/909785310039253022/1169995492734812160/icon128.png?ex=65576e36&is=6544f936&hm=c6cd1ae4f39bc034fbbc9f71175d018ada183fbb18c66b667d95afc7b6f6855c&",
+    "/images/projects/ZackNaniLogo.png",
   date: `2023`,
   title: "Zack Nani Live Extension",
   subtitle: "Freelance Project",

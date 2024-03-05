@@ -30,7 +30,6 @@
   text-underline-offset: 15px;
 }
 
-.project-header img,
 .testimonial-pic img {
   width: 80px;
   height: 80px;
@@ -49,12 +48,6 @@
   margin-top: 16px;
 }
 
-.project-image {
-  border-radius: none;
-  width: 100%;
-  margin: 1rem 0;
-}
-
 @media (max-width: 768px) {
   .project-description {
     box-sizing: border-box;
@@ -67,7 +60,4 @@
     margin: 2rem 0 0 0;
   }
 
-  .book-call-section {
-    width: 80vw;
-  }
 }
