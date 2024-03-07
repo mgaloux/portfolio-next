@@ -1,7 +1,5 @@
 "use client";
 
-import Footer from "../components/Footer";
-import Navbar from "../components/Navbar";
 import Link from "next/link";
 import { lilitaOne, poppins } from "@/fonts/fonts";
 import "../index.css";
@@ -47,7 +45,6 @@ const BlogPreview = ({
 function Blog() {
   return (
     <div>
-      <Navbar />
       <main className="w-[100vw] px-[15%] my-32">
         <h1 style={lilitaOne.style}>Martin's Tech Thoughts</h1>
         <p style={poppins.style} className="text-gray-500 my-2">
@@ -67,7 +64,6 @@ function Blog() {
           />
         </div>
       </main>
-      <Footer />
     </div>
   );
 }

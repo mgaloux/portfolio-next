@@ -130,10 +130,6 @@ h3 {
   z-index: 10;
 }
 
-a:hover {
-  color: white;
-}
-
 .testimonial-pic img {
   box-shadow: -1px 0 0px 1px rgb(255, 255, 255);
 }

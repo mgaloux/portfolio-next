@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import "./styles/globals.css";
 import { poppins } from "./styles/fonts/fonts";
+import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
 
 export const metadata: Metadata = {
   title: "Martin Portfolio",
@@ -14,7 +16,13 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={poppins.className}>{children}</body>
+      <body className={poppins.className}>
+        <Navbar/>
+        <main>
+          {children}
+          <Footer/>
+        </main>
+      </body>
     </html>
   );
 }

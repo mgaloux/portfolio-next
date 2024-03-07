@@ -8,8 +8,8 @@ const LogoBackHomeButton = () => {
       <Image
         priority={true}
         className="hover:scale-110"
-        width={40}
-        height={40}
+        width={32}
+        height={32}
         src="/images/logo.svg"
         alt="salope"
       />
@@ -17,19 +17,22 @@ const LogoBackHomeButton = () => {
   );
 };
 
+const NavbarLink = ({ label, url }: { label: string; url: string }) => {
+  return (
+    <Link href={url} className="transition-colors hover:text-white">
+      {label}
+    </Link>
+  );
+};
+
 const Links = () => {
   return (
     <div className="" style={poppins.style}>
-      <div className="flex flex-row text-md gap-8 items-center">
-        <div className="hover:underline">
-          <Link href="/projects">Projects</Link>
-        </div>
-        <div className="hover:underline">
-          <Link href="/blog">Blog</Link>
-        </div>
-        <div className="hover:underline">
-          <Link href="/contact">Contact me</Link>
-        </div>
+      <div className="flex flex-row text-sm text-[#888] gap-8 items-center">
+        <NavbarLink label="Projects" url="/projects"/>
+        <NavbarLink label="Mentoring" url="/mentoring"/>
+        <NavbarLink label="Blog" url="/blog"/>
+        <NavbarLink label="Contact" url="/contact"/>
       </div>
     </div>
   );
@@ -37,7 +40,7 @@ const Links = () => {
 
 const Navbar = () => {
   return (
-    <header className="bg-black bg-opacity-60 border-b border-gray-700 w-screen px-[15%] flex justify-between items-center h-16 fixed top-0 z-20">
+    <header className="bg-black bg-opacity-80 border-b border-gray-700 w-screen px-[15%] flex justify-between items-center h-16 fixed top-0 z-20">
       <LogoBackHomeButton />
       <Links />
     </header>

@@ -1,6 +1,5 @@
 "use client";
 
-import Navbar from "../components/Navbar";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faLinkedin,
@@ -9,14 +8,12 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 import { motion as m } from "framer-motion";
 import "../index.css";
-import Footer from "../components/Footer";
 import { lilitaOne, poppins } from "@/fonts/fonts";
 import { faEnvelope, faPhone } from "@fortawesome/free-solid-svg-icons";
 
 function Contact() {
   return (
     <div>
-      <Navbar />
       <main className="w-[100vw] px-[15%] my-32">
         <h1 style={lilitaOne.style}>Let's connect !</h1>
         <p style={poppins.style} className="text-gray-500 my-2">
@@ -97,7 +94,6 @@ function Contact() {
           </a>
         </m.div>
       </main>
-      <Footer />
     </div>
   );
 }

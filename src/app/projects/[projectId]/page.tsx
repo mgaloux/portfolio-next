@@ -1,6 +1,5 @@
 "use client";
 
-import "../Projects.css";
 import "../../index.css";
 import {
   ProjectDataInterface,
@@ -8,8 +7,6 @@ import {
   projectsData,
 } from "./ProjectsData";
 import { useParams } from "next/navigation";
-import Navbar from "@/app/components/Navbar";
-import Footer from "@/app/components/Footer";
 import { lilitaOne, poppins } from "@/fonts/fonts";
 
 const ProjectTemplate = () => {
@@ -22,7 +19,6 @@ const ProjectTemplate = () => {
 
   return (
     <div>
-      <Navbar />
       {projectData && (
         <div className="w-[100vw] px-[15%] my-24">
           <div className="flex items-center mb-4">
@@ -64,10 +60,10 @@ const ProjectTemplate = () => {
           </section>
           <section>
             <h3>Key Responsibilities</h3>
-            <ul className="project-responsibilities">
+            <ul>
               {projectData.responsibilities.map((r: string, index: number) => (
-                <li key={index} className="project-responsibility">
-                  {r}
+                <li key={index}>
+                  ◦ {r}
                 </li>
               ))}
             </ul>
@@ -133,7 +129,6 @@ const ProjectTemplate = () => {
         </div>
       )}
 
-      <Footer />
     </div>
   );
 };

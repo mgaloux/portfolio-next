@@ -1,13 +1,10 @@
 "use client";
 
 import Link from "next/link";
-import Navbar from "../components/Navbar";
 import { motion as m } from "framer-motion";
 import { container, item } from "../components/Animations";
 import { lilitaOne, poppins } from "@/fonts/fonts";
-import "./Projects.css";
 import "../index.css";
-import Footer from "../components/Footer";
 
 const ProjectItem = ({
   key,
@@ -21,7 +18,7 @@ const ProjectItem = ({
   return (
     <div className="overflow-hidden bg-black">
       <Link href={to}>
-        <m.li key={key} variants={item} className="projects-row">
+        <m.li key={key} variants={item} className="p-6 border border-black border-b border-b-white hover:border hover:border-[#646cff] hover:border-b-[#646cff]  transition-border-colors duration-300">
           <div>
             <h2 className="text-2xl">{title}</h2>
           </div>
@@ -34,8 +31,7 @@ const ProjectItem = ({
 function AllProjects() {
   return (
     <div>
-      <Navbar />
-      <main className="w-[100vw] px-[15%] my-32" style={lilitaOne.style}>
+      <main className="w-[100vw] sm:px-[5%] lg:px-[15%] mt-32" style={lilitaOne.style}>
         <div className="overflow-hidden">
           <m.h1
             initial={{ y: "-100%", opacity: 0 }}
@@ -49,7 +45,7 @@ function AllProjects() {
           variants={container}
           animate="show"
           initial="hidden"
-          className="project-list"
+          className="my-8"
         >
           <ProjectItem key={1} title="Maskott" to="/projects/maskott" />
           <ProjectItem
@@ -71,7 +67,6 @@ function AllProjects() {
           <ProjectItem key={6} title="Deep-Logic" to="/projects/deep-logic" />
         </m.ul>
       </main>
-      <Footer />
     </div>
   );
 }
