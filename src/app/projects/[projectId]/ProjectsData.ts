@@ -26,7 +26,7 @@ const conityProjectData: ProjectDataInterface = {
       referentRole: "CTO at Conity",
       testimonialText: `Martin a fait preuve d'une capacité d'apprentissage remarquable et s'est très rapidement intégré à l'équipe. Il a brillamment relevé les défis de notre start-up, en démontrant une maîtrise et une polyvalence qui présagent d'un avenir très prometteur.`,
       referentPictureUrl:
-        "https://media.licdn.com/dms/image/D5603AQHgSciRut4pCw/profile-displayphoto-shrink_800_800/0/1680486502917?e=1704326400&v=beta&t=LM0_xMGreInYEBHk8Uh4nT-eKxl4YGdAIEDAGTfU_g4",
+        "/images/projects/RichardRaduly.jpg",
       linkedInUrl: "https://www.linkedin.com/in/r-ichard/",
     },
     {
@@ -34,7 +34,7 @@ const conityProjectData: ProjectDataInterface = {
       referentRole: "President at Conity",
       testimonialText: "...",
       referentPictureUrl:
-        "https://media.licdn.com/dms/image/C4E03AQHTHUBgrqJWSg/profile-displayphoto-shrink_800_800/0/1516783408268?e=1704326400&v=beta&t=k2bSeqBnHoEhciALCJwfJUv31gIowehQAENlTeduxDc",
+        "/images/projects/ThomasRaquin.jpg",
       linkedInUrl: "https://www.linkedin.com/in/thomas-raquin-4b723395/",
     },
   ],
@@ -74,9 +74,9 @@ const maskottProjectData: ProjectDataInterface = {
     {
       referent: "Romain Biard",
       referentRole: "CTO & COO at Maskott",
-      testimonialText: `...`,
+      testimonialText: `Martin a su faire preuve d'innovation et de sang-froid pour faire face aux nombreux défis sur les projets de Maskott. Notre collaboration fut un plaisir durant ces 18 mois, et je suis sûr qu'il aura un impact significatif dans ses futures équipes.`,
       referentPictureUrl:
-        "https://media.licdn.com/dms/image/C5603AQGybsK4xdOMcw/profile-displayphoto-shrink_800_800/0/1648732945019?e=1704326400&v=beta&t=vtJBn0xbw5qKyQAGAyg8ibqzHSzQ-B_BNxMpooHqT1I",
+        "/images/projects/RomainBiard.jpg",
       linkedInUrl: "https://www.linkedin.com/in/rbiard/",
     },
     {
@@ -85,7 +85,7 @@ const maskottProjectData: ProjectDataInterface = {
       testimonialText:
         "Martin a été un excellent collègue durant toute notre collaboration. Il a su m’épauler quand j’en avais besoin et a toujours réussi à résoudre les problématiques qui lui étaient confiées. Je recommande grandement son profil et j’espère avoir l’occasion de retravailler avec lui ",
       referentPictureUrl:
-        "https://media.licdn.com/dms/image/C5603AQE_QfHkH5-PZw/profile-displayphoto-shrink_800_800/0/1561012565390?e=1704326400&v=beta&t=pHXUuoTrihO43wcZlxyj1NIai7DZVsaHwuuX9C8mTmg",
+        "/images/projects/ThomasMauconduit.jpg",
       linkedInUrl: "https://www.linkedin.com/in/tmauc/",
     },
   ],
@@ -117,7 +117,7 @@ const maskottProjectData: ProjectDataInterface = {
     "Rework from JavaScript to TypeScript",
   ],
   pictureUrl:
-    "https://media.licdn.com/dms/image/C4D03AQFGsp_1v7jivg/profile-displayphoto-shrink_800_800/0/1609803669665?e=1704326400&v=beta&t=pCIoxpSNkBaKRyPpRCiPsSJeVDgS2EURU6O0CxnzrIc",
+    "/images/projects/MaskottLogo.jpg",
   date: "2022 June - Current Position",
   title: "Maskott",
   subtitle: "Full-Time Contract",

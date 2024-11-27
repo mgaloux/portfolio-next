@@ -126,33 +126,6 @@ h3 {
   font-weight: 500;
 }
 
-.testimonial-pic {
-  z-index: 10;
-}
-
-.testimonial-pic img {
-  box-shadow: -1px 0 0px 1px rgb(255, 255, 255);
-}
-
-.testimonial-pic img:hover {
-  box-shadow: -1px 0 0px 1px rgb(255, 255, 255);
-}
-
-.testimonies-section {
-  margin: 1rem 0;
-  display: flex;
-  align-items: center;
-  justify-content: left;
-}
-
-.testimonies-section img {
-  transition: transform 0.4s;
-}
-
-.testimonies-section:hover img {
-  transform: scale(1.1);
-}
-
 .testimonial {
   min-height: 80px;
   width: 100%;

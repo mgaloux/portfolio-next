@@ -79,30 +79,32 @@ const ProjectTemplate = () => {
             <>
               <section>
                 <h3>People I've worked with</h3>
-                {projectData.testimonials.map(
-                  (
-                    testimonialData: TestimonialDataInterface,
-                    index: number,
-                  ) => (
-                    <a href={testimonialData.linkedInUrl} target="_blank">
-                      <div key={index}>
-                        <div className="testimonial-pic">
-                          <img
-                            src={testimonialData.referentPictureUrl}
-                            alt="testimonier"
-                          />
+                <div>
+                  {projectData.testimonials.map(
+                    (
+                      testimonialData: TestimonialDataInterface,
+                      index: number,
+                    ) => (
+                      <a href={testimonialData.linkedInUrl} target="_blank">
+                        <div key={index} className="flex items-center border border-white border-opacity-50 bg-black bg-opacity-50 rounded-lg p-4 my-2">
+                            <img
+                              src={testimonialData.referentPictureUrl}
+                              alt="testimonier"
+                              className="size-24 rounded-full z-10"
+                            />
+                          <blockquote>
+                            <p style={poppins.style}>{testimonialData.testimonialText}</p>
+                            <cite>
+                              <b>{testimonialData.referent}</b>,{" "}
+                              {testimonialData.referentRole}
+                            </cite>
+                          </blockquote>
                         </div>
-                        <blockquote className="testimonial">
-                          {testimonialData.testimonialText}
-                          <cite>
-                            <b>{testimonialData.referent}</b>,{" "}
-                            {testimonialData.referentRole}
-                          </cite>
-                        </blockquote>
-                      </div>
-                    </a>
-                  ),
-                )}
+                      </a>
+                    ),
+                  )}
+                </div>
+                
               </section>
             </>
           ) : (

@@ -16,7 +16,7 @@ const Category = ({
   children: ReactNode;
 }) => {
   return (
-    <div className="mb-8 flex flex-col">
+    <div className="mb-8 flex flex-col gap-1">
       <h3 style={lilitaOne.style} className="text-2xl pb-2">
         {label}
       </h3>

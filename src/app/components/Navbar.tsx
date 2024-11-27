@@ -40,10 +40,10 @@ const Links = () => {
 
 const Navbar = () => {
   return (
-    <header className="bg-black bg-opacity-80 border-b border-gray-700 w-screen px-[15%] flex justify-between items-center h-16 fixed top-0 z-20">
+    <nav className="bg-black bg-opacity-80 border-b border-gray-700 w-screen px-[15%] flex justify-between items-center h-16 fixed top-0 z-20">
       <LogoBackHomeButton />
       <Links />
-    </header>
+    </nav>
   );
 };
 

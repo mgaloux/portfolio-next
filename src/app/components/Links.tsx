@@ -17,9 +17,9 @@ export const ExternalLink = ({
       href={url}
       target="_blank"
       rel="noopener noreferrer"
-      className="hover:underline text-sm"
+      className="hover:underline text-sm flex items-center"
     >
-      {icon && <FontAwesomeIcon icon={icon} size="lg" className="pr-2" />}
+      {icon && <FontAwesomeIcon icon={icon} className="pr-2 w-6" />}
       {label}
     </a>
   );
